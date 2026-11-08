@@ -7,7 +7,7 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "prisma:generate": "prisma generate",
-    "prisma:studio": "prisma studio --url \"file://./dev/bd\""
+    "prisma:studio": "prisma studio --url \"file://./dev.db\""
   },
   "dependencies": {
     "@prisma/adapter-better-sqlite3": "7.10.1",
