@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+
+# Generated Prisma Client
+/src/generated/prisma/
+
+# Environment variables
+.env
+.env.*
+
+# Allow example environment file
+!.env.example
+
+# Logs
+*.log
+
+# SQLite database
+*.db
+*.db-journal
