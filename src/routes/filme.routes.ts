@@ -4,11 +4,10 @@ import { Router } from "express";
 const router = Router();
 const filmeController = new FilmeController();
 
+router.post("/", filmeController.create);
 
-router.post("/", filmeController.create)
+router.delete("/:id", filmeController.delete);
 
+router.put("/:id", filmeController.update);
 
-router.delete("/:id", filmeController.create)
-
-
-export {router as filmeRoutes};
+export { router as filmeRoutes };

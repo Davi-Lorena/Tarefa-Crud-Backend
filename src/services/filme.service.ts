@@ -26,12 +26,17 @@ export class FilmeService{
 
     async findById(id: number)
     {
-
+        return await prisma.filme.findUnique({
+            where: { id: id }
+        });
     }
 
     async update(id:number, dados: {titulo: string; nota: number; imagem: string; })
     {
-
+        return await prisma.filme.update({
+            where: { id: id },
+            data: dados
+        });
     }
 
 }
